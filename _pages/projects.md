@@ -1,13 +1,14 @@
 ---
+title: Project Portfolio
+permalink: projects/
 layout: splash
-permalink: /
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/ml_pictogram.png
   cta_label: 
   cta_url: 
   caption: 
-excerpt: '\"I Tinker With Your Data\"'
+excerpt: '\"My Projects"'
 feature_row:
   - image_path: /assets/images/WatchThis.jpg
     alt: "Capstone Project"
