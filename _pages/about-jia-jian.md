@@ -6,14 +6,14 @@ layout: single
 ---
 
 ## Who Am I?
-With an analytical mindset from my engineering background, I was introduced to Machine Learning when adopting preventive 
-maintenance technology at my former workplace.
+At my former workplace, I was introduced to Machine Learning when adopting preventive 
+maintenance technology.
 
 This led to an extensive reading up into the realm of Data Science. And I have never turned back since.
 
 I am a python coder with skillsets in statistical modeling, machine learning techniques and SQL.
 
-Firm believer that data is the new currency of tomorrow and its possibilities are boundless.
+Armed with analytical mindset from engineering background, I am a firm believer that data is the new currency of tomorrow and its possibilities are boundless.
 
 
 ## When I Am Not Dabbling With Data Science, I..
