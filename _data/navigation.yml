@@ -4,8 +4,8 @@ main:
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About Jia Jian"
     url: /about
-  - title: "My Project Portfolio"
-    url: /portfolio
+  - title: "My Capstone Project"
+    url: /capstone
   - title: "Contact Me"
     url: /contact
   # - title: "About"
