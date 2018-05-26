@@ -8,7 +8,7 @@ header:
   cta_label: 
   cta_url: 
   caption: 
-excerpt: '\"My Projects"'
+excerpt: #'\My Projects'
 feature_row:
   - image_path: /assets/images/WatchThis.jpg
     alt: "Capstone Project"
