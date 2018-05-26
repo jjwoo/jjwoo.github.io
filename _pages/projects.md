@@ -8,15 +8,15 @@ header:
   cta_label: 
   cta_url: 
   caption: 
-excerpt: #'\My Projects'
+# excerpt: '\My Projects'
 feature_row:
-  - image_path: /assets/images/WatchThis.jpg
-    alt: "Capstone Project"
-    title: "Capstone Project"
-    excerpt: "WatchThis is a flexible movie recommender built to recommend movies to user. The user can input his/her favourite director, cast or genre, WatchThis is smart to recommend movies based on diverse choices.<br>"
-    url: "/capstone"
-    btn_class: "btn--primary"
-    btn_label: "View"
+ - image_path: /assets/images/WatchThis.jpg
+   alt: "Capstone Project"
+   title: "Capstone Project"
+   excerpt: "WatchThis is a flexible movie recommender built to recommend movies to user. The user can input his/her favourite    director, cast or genre, WatchThis is smart to recommend movies based on diverse choices.<br>"
+   url: "/capstone"
+   btn_class: "btn--primary"
+   btn_label: "View"
 github: /jjwoo
 intro:
 ---
