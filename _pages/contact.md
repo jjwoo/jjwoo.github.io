@@ -1,14 +1,12 @@
 ---
-title: "Thank You For Visiting :)"
+title: "Thank You For Visiting My Github Pages :)"
 permalink: /contact
 author_profile: true
 layout: single
 ---
 
 
-<img src="/assets/images/thankyou.jpg" width="100%">
-
-Thank you for visiting my Github Pages.  
+<img src="/assets/images/thankyou.jpg" width="100%"> 
   
 I am currently seeking opportunities to work as a junior data scientist / data analyst. Please visit my linkedin page for more information:  
 [https://www.linkedin.com/in/jiajianwoo](https://www.linkedin.com/in/jiajianwoo)  
