@@ -1,6 +1,6 @@
 ---
 title: "-- About Jia Jian --"
-permalink: about/
+permalink: /about
 author_profile: true
 layout: single
 ---
