@@ -11,7 +11,7 @@ spent learning data science from scratch with coursemates from all walks of life
 some are still students, but all with one objective: To emerge as competent data scientists/analysts equipped with the relevant
 skillsets.
 
-## So Am I Competent Already?
+## Am I Competent Already?
 
 As I stand on the cusp of being a newly minted data analyst, I cannot help but wonder whether I am fully ready for the challenges ahead.
 12 weeks of mind-boggling learning have definitely brought me from a data newbie to a... junior data scientist/analyst? Does it work that way?
