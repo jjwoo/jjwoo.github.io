@@ -6,7 +6,7 @@ date: 2018-05-28 15:00:00 +08:00
 # Life After Data Science Course
 
 Phew! I heaved a sigh of relief mentally, as I collected my certificate of completion from my course instructor.
-It was the last day of the 12-week bootcamp in data science, and it had a bittersweet feel to it. It was a fruitful 12-week 
+It was the last day of the 12-week bootcamp in data science, and had a bittersweet feel to it. It was a fruitful 12-week 
 spent learning data science from scratch with coursemates from all walks of life. Most of us are looking to switch careers,
 some are still students, but all with one objective: To emerge as competent data scientists/analysts equipped with the relevant
 skillsets.
