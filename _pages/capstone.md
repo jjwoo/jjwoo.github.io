@@ -1,4 +1,10 @@
-
+---
+layout: single
+permalink: capstone/
+title: &title "Capstone Project"
+author_profile: true
+---
+## WatchThis (A Movie Recommender)
 
 ```python
 %matplotlib inline
