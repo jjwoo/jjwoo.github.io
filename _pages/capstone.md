@@ -4,7 +4,8 @@ permalink: capstone/
 title: &title "WatchThis (A Movie Recommender)"
 author_profile: true
 toc: true
-toc_label: ON THIS PAGE
+toc_label: "My Table of Contents"
+toc_icon: "cog"
 ---
 <img src="/assets/images/movie-collage.jpg" width="100%">
 
@@ -64,7 +65,7 @@ movies.genres.head(5)
 
 I will use a weighted rating that takes into account the average rating and the number of votes for the movie. Hence, a movie that has a 8 rating from say, 50k voters will have a higher score than a movie with the same rating but with fewer voters.
 
-<img src="/assets/images/weightrating.jpg" width="40%">
+<img src="/assets/images/weightrating.jpg" width="10%">
 
 where,
 * *v* is the number of votes for the movie
