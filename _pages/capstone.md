@@ -64,7 +64,7 @@ movies.genres.head(5)
 
 I will use a weighted rating that takes into account the average rating and the number of votes for the movie. Hence, a movie that has a 8 rating from say, 50k voters will have a higher score than a movie with the same rating but with fewer voters.
 
-<img src="/assets/images/weightrating.jpg" width="100%">
+<img src="/assets/images/weightrating.jpg" width="40%">
 
 where,
 * *v* is the number of votes for the movie
