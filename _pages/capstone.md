@@ -9,8 +9,6 @@ toc_icon: "cog"
 ---
 <img src="/assets/images/movie-collage.jpg" width="100%">
 
-## WatchThis (A Movie Recommender)
-
 ## 1. Problem Statement
 
 Have you ever wanted to watch a movie in the comfort of your home, but stopped short of doing so just because nothing came to mind? Or during a stayover with friends, too many differences in preferences for a movie choice led to a wild goose catch for a decision that never materialized? 
