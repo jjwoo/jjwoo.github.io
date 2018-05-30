@@ -1,0 +1,526 @@
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>adult</th>
+      <th>belongs_to_collection</th>
+      <th>budget</th>
+      <th>genres</th>
+      <th>homepage</th>
+      <th>id</th>
+      <th>imdb_id</th>
+      <th>original_language</th>
+      <th>original_title</th>
+      <th>overview</th>
+      <th>...</th>
+      <th>release_date</th>
+      <th>revenue</th>
+      <th>runtime</th>
+      <th>spoken_languages</th>
+      <th>status</th>
+      <th>tagline</th>
+      <th>title</th>
+      <th>video</th>
+      <th>vote_average</th>
+      <th>vote_count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>False</td>
+      <td>{'id': 10194, 'name': 'Toy Story Collection', ...</td>
+      <td>30000000</td>
+      <td>[{'id': 16, 'name': 'Animation'}, {'id': 35, '...</td>
+      <td>http://toystory.disney.com/toy-story</td>
+      <td>862</td>
+      <td>tt0114709</td>
+      <td>en</td>
+      <td>Toy Story</td>
+      <td>Led by Woody, Andy's toys live happily in his ...</td>
+      <td>...</td>
+      <td>1995-10-30</td>
+      <td>373554033.0</td>
+      <td>81.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>NaN</td>
+      <td>Toy Story</td>
+      <td>False</td>
+      <td>7.7</td>
+      <td>5415.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>65000000</td>
+      <td>[{'id': 12, 'name': 'Adventure'}, {'id': 14, '...</td>
+      <td>NaN</td>
+      <td>8844</td>
+      <td>tt0113497</td>
+      <td>en</td>
+      <td>Jumanji</td>
+      <td>When siblings Judy and Peter discover an encha...</td>
+      <td>...</td>
+      <td>1995-12-15</td>
+      <td>262797249.0</td>
+      <td>104.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}, {'iso...</td>
+      <td>Released</td>
+      <td>Roll the dice and unleash the excitement!</td>
+      <td>Jumanji</td>
+      <td>False</td>
+      <td>6.9</td>
+      <td>2413.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>False</td>
+      <td>{'id': 119050, 'name': 'Grumpy Old Men Collect...</td>
+      <td>0</td>
+      <td>[{'id': 10749, 'name': 'Romance'}, {'id': 35, ...</td>
+      <td>NaN</td>
+      <td>15602</td>
+      <td>tt0113228</td>
+      <td>en</td>
+      <td>Grumpier Old Men</td>
+      <td>A family wedding reignites the ancient feud be...</td>
+      <td>...</td>
+      <td>1995-12-22</td>
+      <td>0.0</td>
+      <td>101.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Still Yelling. Still Fighting. Still Ready for...</td>
+      <td>Grumpier Old Men</td>
+      <td>False</td>
+      <td>6.5</td>
+      <td>92.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>16000000</td>
+      <td>[{'id': 35, 'name': 'Comedy'}, {'id': 18, 'nam...</td>
+      <td>NaN</td>
+      <td>31357</td>
+      <td>tt0114885</td>
+      <td>en</td>
+      <td>Waiting to Exhale</td>
+      <td>Cheated on, mistreated and stepped on, the wom...</td>
+      <td>...</td>
+      <td>1995-12-22</td>
+      <td>81452156.0</td>
+      <td>127.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Friends are the people who let you be yourself...</td>
+      <td>Waiting to Exhale</td>
+      <td>False</td>
+      <td>6.1</td>
+      <td>34.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>False</td>
+      <td>{'id': 96871, 'name': 'Father of the Bride Col...</td>
+      <td>0</td>
+      <td>[{'id': 35, 'name': 'Comedy'}]</td>
+      <td>NaN</td>
+      <td>11862</td>
+      <td>tt0113041</td>
+      <td>en</td>
+      <td>Father of the Bride Part II</td>
+      <td>Just when George Banks has recovered from his ...</td>
+      <td>...</td>
+      <td>1995-02-10</td>
+      <td>76578911.0</td>
+      <td>106.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Just When His World Is Back To Normal... He's ...</td>
+      <td>Father of the Bride Part II</td>
+      <td>False</td>
+      <td>5.7</td>
+      <td>173.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>60000000</td>
+      <td>[{'id': 28, 'name': 'Action'}, {'id': 80, 'nam...</td>
+      <td>NaN</td>
+      <td>949</td>
+      <td>tt0113277</td>
+      <td>en</td>
+      <td>Heat</td>
+      <td>Obsessive master thief, Neil McCauley leads a ...</td>
+      <td>...</td>
+      <td>1995-12-15</td>
+      <td>187436818.0</td>
+      <td>170.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}, {'iso...</td>
+      <td>Released</td>
+      <td>A Los Angeles Crime Saga</td>
+      <td>Heat</td>
+      <td>False</td>
+      <td>7.7</td>
+      <td>1886.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>58000000</td>
+      <td>[{'id': 35, 'name': 'Comedy'}, {'id': 10749, '...</td>
+      <td>NaN</td>
+      <td>11860</td>
+      <td>tt0114319</td>
+      <td>en</td>
+      <td>Sabrina</td>
+      <td>An ugly duckling having undergone a remarkable...</td>
+      <td>...</td>
+      <td>1995-12-15</td>
+      <td>0.0</td>
+      <td>127.0</td>
+      <td>[{'iso_639_1': 'fr', 'name': 'Français'}, {'is...</td>
+      <td>Released</td>
+      <td>You are cordially invited to the most surprisi...</td>
+      <td>Sabrina</td>
+      <td>False</td>
+      <td>6.2</td>
+      <td>141.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>[{'id': 28, 'name': 'Action'}, {'id': 12, 'nam...</td>
+      <td>NaN</td>
+      <td>45325</td>
+      <td>tt0112302</td>
+      <td>en</td>
+      <td>Tom and Huck</td>
+      <td>A mischievous young boy, Tom Sawyer, witnesses...</td>
+      <td>...</td>
+      <td>1995-12-22</td>
+      <td>0.0</td>
+      <td>97.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}, {'iso...</td>
+      <td>Released</td>
+      <td>The Original Bad Boys.</td>
+      <td>Tom and Huck</td>
+      <td>False</td>
+      <td>5.4</td>
+      <td>45.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>35000000</td>
+      <td>[{'id': 28, 'name': 'Action'}, {'id': 12, 'nam...</td>
+      <td>NaN</td>
+      <td>9091</td>
+      <td>tt0114576</td>
+      <td>en</td>
+      <td>Sudden Death</td>
+      <td>International action superstar Jean Claude Van...</td>
+      <td>...</td>
+      <td>1995-12-22</td>
+      <td>64350171.0</td>
+      <td>106.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Terror goes into overtime.</td>
+      <td>Sudden Death</td>
+      <td>False</td>
+      <td>5.5</td>
+      <td>174.0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>False</td>
+      <td>{'id': 645, 'name': 'James Bond Collection', '...</td>
+      <td>58000000</td>
+      <td>[{'id': 12, 'name': 'Adventure'}, {'id': 28, '...</td>
+      <td>http://www.mgm.com/view/movie/757/Goldeneye/</td>
+      <td>710</td>
+      <td>tt0113189</td>
+      <td>en</td>
+      <td>GoldenEye</td>
+      <td>James Bond must unmask the mysterious head of ...</td>
+      <td>...</td>
+      <td>1995-11-16</td>
+      <td>352194034.0</td>
+      <td>130.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}, {'iso...</td>
+      <td>Released</td>
+      <td>No limits. No fears. No substitutes.</td>
+      <td>GoldenEye</td>
+      <td>False</td>
+      <td>6.6</td>
+      <td>1194.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>62000000</td>
+      <td>[{'id': 35, 'name': 'Comedy'}, {'id': 18, 'nam...</td>
+      <td>NaN</td>
+      <td>9087</td>
+      <td>tt0112346</td>
+      <td>en</td>
+      <td>The American President</td>
+      <td>Widowed U.S. president Andrew Shepherd, one of...</td>
+      <td>...</td>
+      <td>1995-11-17</td>
+      <td>107879496.0</td>
+      <td>106.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Why can't the most powerful man in the world h...</td>
+      <td>The American President</td>
+      <td>False</td>
+      <td>6.5</td>
+      <td>199.0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>[{'id': 35, 'name': 'Comedy'}, {'id': 27, 'nam...</td>
+      <td>NaN</td>
+      <td>12110</td>
+      <td>tt0112896</td>
+      <td>en</td>
+      <td>Dracula: Dead and Loving It</td>
+      <td>When a lawyer shows up at the vampire's doorst...</td>
+      <td>...</td>
+      <td>1995-12-22</td>
+      <td>0.0</td>
+      <td>88.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}, {'iso...</td>
+      <td>Released</td>
+      <td>NaN</td>
+      <td>Dracula: Dead and Loving It</td>
+      <td>False</td>
+      <td>5.7</td>
+      <td>210.0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>False</td>
+      <td>{'id': 117693, 'name': 'Balto Collection', 'po...</td>
+      <td>0</td>
+      <td>[{'id': 10751, 'name': 'Family'}, {'id': 16, '...</td>
+      <td>NaN</td>
+      <td>21032</td>
+      <td>tt0112453</td>
+      <td>en</td>
+      <td>Balto</td>
+      <td>An outcast half-wolf risks his life to prevent...</td>
+      <td>...</td>
+      <td>1995-12-22</td>
+      <td>11348324.0</td>
+      <td>78.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Part Dog. Part Wolf. All Hero.</td>
+      <td>Balto</td>
+      <td>False</td>
+      <td>7.1</td>
+      <td>423.0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>44000000</td>
+      <td>[{'id': 36, 'name': 'History'}, {'id': 18, 'na...</td>
+      <td>NaN</td>
+      <td>10858</td>
+      <td>tt0113987</td>
+      <td>en</td>
+      <td>Nixon</td>
+      <td>An all-star cast powers this epic look at Amer...</td>
+      <td>...</td>
+      <td>1995-12-22</td>
+      <td>13681765.0</td>
+      <td>192.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Triumphant in Victory, Bitter in Defeat. He Ch...</td>
+      <td>Nixon</td>
+      <td>False</td>
+      <td>7.1</td>
+      <td>72.0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>98000000</td>
+      <td>[{'id': 28, 'name': 'Action'}, {'id': 12, 'nam...</td>
+      <td>NaN</td>
+      <td>1408</td>
+      <td>tt0112760</td>
+      <td>en</td>
+      <td>Cutthroat Island</td>
+      <td>Morgan Adams and her slave, William Shaw, are ...</td>
+      <td>...</td>
+      <td>1995-12-22</td>
+      <td>10017322.0</td>
+      <td>119.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}, {'iso...</td>
+      <td>Released</td>
+      <td>The Course Has Been Set. There Is No Turning B...</td>
+      <td>Cutthroat Island</td>
+      <td>False</td>
+      <td>5.7</td>
+      <td>137.0</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>52000000</td>
+      <td>[{'id': 18, 'name': 'Drama'}, {'id': 80, 'name...</td>
+      <td>NaN</td>
+      <td>524</td>
+      <td>tt0112641</td>
+      <td>en</td>
+      <td>Casino</td>
+      <td>The life of the gambling paradise – Las Vegas ...</td>
+      <td>...</td>
+      <td>1995-11-22</td>
+      <td>116112375.0</td>
+      <td>178.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>No one stays at the top forever.</td>
+      <td>Casino</td>
+      <td>False</td>
+      <td>7.8</td>
+      <td>1343.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>16500000</td>
+      <td>[{'id': 18, 'name': 'Drama'}, {'id': 10749, 'n...</td>
+      <td>NaN</td>
+      <td>4584</td>
+      <td>tt0114388</td>
+      <td>en</td>
+      <td>Sense and Sensibility</td>
+      <td>Rich Mr. Dashwood dies, leaving his second wif...</td>
+      <td>...</td>
+      <td>1995-12-13</td>
+      <td>135000000.0</td>
+      <td>136.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Lose your heart and come to your senses.</td>
+      <td>Sense and Sensibility</td>
+      <td>False</td>
+      <td>7.2</td>
+      <td>364.0</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>4000000</td>
+      <td>[{'id': 80, 'name': 'Crime'}, {'id': 35, 'name...</td>
+      <td>NaN</td>
+      <td>5</td>
+      <td>tt0113101</td>
+      <td>en</td>
+      <td>Four Rooms</td>
+      <td>It's Ted the Bellhop's first night on the job....</td>
+      <td>...</td>
+      <td>1995-12-09</td>
+      <td>4300000.0</td>
+      <td>98.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Twelve outrageous guests. Four scandalous requ...</td>
+      <td>Four Rooms</td>
+      <td>False</td>
+      <td>6.5</td>
+      <td>539.0</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>False</td>
+      <td>{'id': 3167, 'name': 'Ace Ventura Collection',...</td>
+      <td>30000000</td>
+      <td>[{'id': 80, 'name': 'Crime'}, {'id': 35, 'name...</td>
+      <td>NaN</td>
+      <td>9273</td>
+      <td>tt0112281</td>
+      <td>en</td>
+      <td>Ace Ventura: When Nature Calls</td>
+      <td>Summoned from an ashram in Tibet, Ace finds hi...</td>
+      <td>...</td>
+      <td>1995-11-10</td>
+      <td>212385533.0</td>
+      <td>90.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>New animals. New adventures. Same hair.</td>
+      <td>Ace Ventura: When Nature Calls</td>
+      <td>False</td>
+      <td>6.1</td>
+      <td>1128.0</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>False</td>
+      <td>NaN</td>
+      <td>60000000</td>
+      <td>[{'id': 28, 'name': 'Action'}, {'id': 35, 'nam...</td>
+      <td>NaN</td>
+      <td>11517</td>
+      <td>tt0113845</td>
+      <td>en</td>
+      <td>Money Train</td>
+      <td>A vengeful New York transit cop decides to ste...</td>
+      <td>...</td>
+      <td>1995-11-21</td>
+      <td>35431113.0</td>
+      <td>103.0</td>
+      <td>[{'iso_639_1': 'en', 'name': 'English'}]</td>
+      <td>Released</td>
+      <td>Get on, or GET OUT THE WAY!</td>
+      <td>Money Train</td>
+      <td>False</td>
+      <td>5.4</td>
+      <td>224.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>20 rows × 24 columns</p>
+</div>
