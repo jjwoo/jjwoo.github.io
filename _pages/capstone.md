@@ -35,7 +35,7 @@ movies = pd.read_csv("./movies-dataset/movies_metadata.csv")
 movies.head(20)
 ```
 
-<iframe src="/assets/capstone-table1.html" height="400" width="600" overflow="auto"></iframe>
+<iframe src="/assets/capstone-table1.html" height="400" width="800" overflow="auto"></iframe>
 
 After some data cleaning, we are good to go!
 
