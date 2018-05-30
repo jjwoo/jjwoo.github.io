@@ -233,7 +233,7 @@ def weighted_rating(x, m=m, C=C):
 q_movies['score'] = q_movies.apply(weighted_rating, axis=1)
 ```
 
-### Top movies by weighted rating
+### 4.1 Top movies by weighted rating
 
 
 ```python
@@ -397,7 +397,7 @@ q_movies[['title', 'vote_count', 'vote_average', 'score','genres']].head(15)
 
 
 
-### Top movies by genre
+### 4.2 Top movies by genre
 
 
 ```python
@@ -780,7 +780,7 @@ genre_chart('Romance').head(10)
 </table>
 </div>
 
-## 4. Content Based Recommender (Movie Description)
+## 5. Content Based Recommender (Movie Description)
 
 This part recommends movies that are similar to a particular movie in terms of movie description. It considers the pairwise similarity scores for all movies based on their plot descriptions and recommend movies based on that similarity score.
 
@@ -905,7 +905,7 @@ get_recommendations('Mission: Impossible - Ghost Protocol')
 
 
 
-### 4.1 Content Based Recommender (Other Parameters)
+### 5.1 Content Based Recommender (Other Parameters)
 
 For the recommendations, it seems that the movies are correctly recommended based on similar movie descriptions. However, some users might like a movie based on the movie's cast, director and/or the genre of the movie. Hence, the model will be improved based on these two added features.
 
@@ -1176,7 +1176,7 @@ get_recommendations('The Godfather', cosine_sim2)
 
 
 
-## 5. Prediction Of Ratings (Collaborative Filtering)
+## 6. Prediction Of Ratings (Collaborative Filtering)
 
 For this part, I will attempt to predict how a user will rate a recommended movie (presuming he or she has not seen it before or at least has not rated it before)
 
@@ -1519,7 +1519,7 @@ svd.predict(1, 31)
     Prediction(uid=1, iid=31, r_ui=None, est=2.5823946941598028, details={'was_impossible': False})
     
     
-## 6. Key Insights
+## 7. Key Insights
 
 1. **Baseline Model**
     - Does well in recommending movies which have a high weighted rating according to user's favourite genre.
@@ -1536,7 +1536,7 @@ svd.predict(1, 31)
 4. **Other models**
     For the movie recommender engine, there exists a Collaborative Filtering model which takes into account similar users' choices of movies and recommends such movies to the inquiring user. But due to the time constraints of the capstone project, we are only able to explore content based model. I will be following up with this model so give this a space a watch!
 
-## 7. Future work
+## 8. Future work
 
 I hope you like what you have seen thus far.
 
